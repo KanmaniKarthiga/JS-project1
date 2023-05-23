@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3D087B;
+}
+.parent{
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+}
+.container1{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top:  40px;
+    margin-left: 50px;
+}
+.clock_logo{
+    height: 34px;
+}
+.timecard{
+    background-color: white;
+    color: #3D087B;
+    line-height: 70px;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+select{
+    color: #3D087B;
+    border: 1px solid #e2e1e1;
+    opacity: 3;
+}
+label{
+    position: relative;
+    left: 45px;
+    top: 2px;
+}
+#wakeuptime{
+    position: relative;
+    left: 72px;
+    width: 230px;
+    height: 30px;
+    padding-left: 10px;
+}
+#lunchtime{
+    position: relative;
+    left: 93px;
+    width: 230px;
+    height: 30px;
+    padding-left: 10px;
+}
+#naptime{
+    position: relative;
+    left:109px;
+    width: 230px;
+    height: 30px;
+    padding-left: 10px;
+}
+#nighttime{
+    position: relative;
+    left: 96px;
+    width: 230px;
+    height: 30px;
+    padding-left: 10px;
+}
+.image{
+    position: relative;
+    top: 12px;
+    left: 25px;
+    height: 30px;
+}
+.morning_message{
+    padding: 10px 20px; 
+    height: 100px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #845ab4de;
+    color: white;
+    position: relative;
+    top: 50px;
+    font-family: 'Carter One', cursive;
+    font-weight: 900;
+    font-size: 25px;
+}
+.alarm{
+    position: relative;
+    top: 40px;
+}
+button{
+    height: 40px;
+    width: 240px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF);
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+button:hover{
+    background: linear-gradient(to right, #FC5EFF, #CB52F8, #6E54EC);
+}
+.timeset{
+    height: 120px;
+    width: 250px;
+    padding-left: 15px;
+    padding-top: 7px;
+    line-height: 25px;
+    border-radius: 10px;
+    background-color: #845ab4de;
+    color: #F25CFE;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+}
+
+.container2{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.card1{
+    background-color: white;
+    height: 105px;
+    width: 535px;
+    border-radius: 10px;
+    color: #3D087B;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 5;
+}
+h3{
+    position: relative;
+    top: 38px;
+    left: 50px;
+}
+.timerimg1{
+    position: relative;
+    top: 0px;
+    left: 60px;
+}
+.timerimg2{
+    position: relative;
+    left: 30px;
+}
+.span1{
+    position: relative;
+    left: 45px;
+    top: 28px;
+    font-size: 30px;
+    color: #8A11BF;
+}
+.span2{
+    position: relative;
+    left: 15px;
+    top: 28px;
+    font-size: 30px;
+    color: #8A11BF;
+}
+.hiddenbox1{
+    height: 50px;
+    width: 440px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    position: absolute;
+    top: 98px;
+    left: 720px;
+    z-index: 2;
+}
+.hiddenbox2{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    opacity: 0.3;
+    position: absolute;
+    top: 112px;
+    left: 740px;
+}
+.card2{
+    background-color: white;
+    height: 80px;
+    width: 535px;
+    border-radius: 10px;
+    position: absolute;
+    top: 175px;
+    font-family: 'Carter One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 5px;
+    color: #8E53F0;
+    padding-top: 18px;
+}
+.card3{
+    position: absolute;
+    top: 270px;
+    height: 340px;
+}
+
+
+
+/* ########################## */
+@media (max-width: 500px) and (min-width: 250px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    .container1{
+        margin-left: 0px;
+        width: 100vw;
+    }
+    .timeset{
+        position: relative;
+        left: 20px;
+        top: -52px;
+    }
+    .container2{
+        position: relative;
+        top: 200px;
+    }
+    .hiddenbox1{
+        position: absolute;
+        left: 40px;
+        top: 75px;
+    }
+    .hiddenbox2{
+        position: absolute;
+        left: 50px;
+        top: 90px;
+    }
+}
