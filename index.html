@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Carter+One&family=Manrope:wght@500&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -33,7 +33,7 @@
                         <option value="7">7 AM - 8 AM</option>
                         <option value="8">8 AM - 9 AM</option>
                         <option value="9">9 AM - 10 AM</option>
-                        <option value="10" selected>10 AM - 11 AM</option>
+                        <option value="10">10 AM - 11 AM</option>
                         <option value="11">11 AM - 12 PM</option>
                         <option value="12">12 PM - 1 PM</option>
                         <option value="13">1 PM - 2 PM</option>
@@ -66,7 +66,7 @@
                         <option value="9">9 AM - 10 AM</option>
                         <option value="10">10 AM - 11 AM</option>
                         <option value="11">11 AM - 12 PM</option>
-                        <option value="12" selected>12 PM - 1 PM</option>
+                        <option value="12">12 PM - 1 PM</option>
                         <option value="13">1 PM - 2 PM</option>
                         <option value="14">2 PM - 3 PM</option>
                         <option value="15">3 PM - 4 PM</option>
@@ -101,7 +101,7 @@
                         <option value="13">1 PM - 2 PM</option>
                         <option value="14">2 PM - 3 PM</option>
                         <option value="15">3 PM - 4 PM</option>
-                        <option value="16" selected>4 PM - 5 PM</option>
+                        <option value="16">4 PM - 5 PM</option>
                         <option value="17">5 PM - 6 PM</option>
                         <option value="18">6 PM - 7 PM</option>
                         <option value="19">7 PM - 8 PM</option>
@@ -132,7 +132,7 @@
                         <option value="13">1 PM - 2 PM</option>
                         <option value="14">2 PM - 3 PM</option>
                         <option value="15">3 PM - 4 PM</option>
-                        <option value="16" selected>4 PM - 5 PM</option>
+                        <option value="16">4 PM - 5 PM</option>
                         <option value="17">5 PM - 6 PM</option>
                         <option value="18">6 PM - 7 PM</option>
                         <option value="19">7 PM - 8 PM</option>
@@ -144,10 +144,10 @@
                 </div>
             </div>
             <div class="morning_message">
-                <div>GOOD MORNING!! WAKE UP!!</div>
+                <p>GOOD MORNING!! WAKE UP!!</p>
             </div>
             <div class="alarm">
-                <button>Set Alarm</button>
+                <button onclick="checkTime">Set Alarm</button>
                 <div class="timeset">
                     Wake Up Time : 10AM - 11AM <br>
                     Lunch Time : 12PM - 1PM <br>
@@ -158,24 +158,28 @@
         </div>
         <div class="container2">
             <div class="card1">
-                <h3>TIME</h3>
-                <img src="./timeline.svg" alt="timer" class="timerimg1">
-                <span class="span1">:</span>
-                <img src="./timeline.svg" alt="timer" class="timerimg2">
-                <span class="span2">:</span>
-                <img src="./timeline.svg" alt="timer" class="timerimg3">
-                <img src="./AM_svg.svg" alt="timer" class="timerimg4">
+            <h3>TIME</h3>
+            <div id="clock">
+                <div id="time">
+                    <div><span id="hour">00</span><span>Hours</span></div>
+                    <div><span id="minutes">00</span><span>Mins</span></div>
+                    <div><span id="seconds">00</span><span>Secs</span></div>
+                    <div><span id="ampm">AM</span></div>
+                </div>
             </div>
+        </div>
+            
             <div class="hiddenbox1"></div>
             <div class="hiddenbox2"></div>
             <div class="card2">
-                <p>GRAB SOME HEALTHY BREAKFAST!!!</p>
+                <p id="tag1">GRAB SOME HEALTHY BREAKFAST!!!</p>
             </div>
             <div class="card3">
                 <img src="./Component 30 – 1.svg" alt="image">
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
