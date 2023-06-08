@@ -148,33 +148,34 @@ h3{
     top: 38px;
     left: 50px;
 }
-#clock #time{
-    display: flex;
-    gap: 20px;
-}
-#clock #time div{
-    position: relative;
-    left: 70px;
-    top: 7px;
-    margin: 0.5px;
-}
-#clock #time div #ampm{
-    height: 90px;
-    background-color: #CB52F8;
-    color: white;
-}
-#clock #time div span{
-    position: relative;
-    height: 45px;
-    width: 80px;
-    background-color: #F6E2FF;
-    color: #8A11BF;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#clock{
+    display: inline-block;
+    margin-left: 95px;
+    margin-top: 32px;
     font-size: 20px;
-    z-index: 10;
+    
+}
+#timer1{
+    position: absolute;
+    right: 490px;
+    top: 38px;
+    z-index: -5;
+}
+#timer2{
+    position: absolute;
+    right: 390px;
+    top: 38px;
+    z-index: -5;
+}#timer3{
+    position: absolute;
+    right: 295px;
+    top: 38px;
+    z-index: -5;
+}#timer4{
+    position: absolute;
+    right: 200px;
+    top: 38px;
+    z-index: -5;
 }
 .hiddenbox1{
     height: 50px;

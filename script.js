@@ -1,62 +1,56 @@
-// let hours = 0;
-// 
-//     function startClock(){
-//         let time = new Date();
-//         let hrs = time.getHours()
-//         let mins = time.getMinutes()
-//         let secs = time.getSeconds()
-//         let AMPM = "AM"
-//         if(hrs > 12){
-//             hrs -= 12
-//             AMPM = "PM"
-//         }
-//         hours - hrs
-//         console.log `${hrs} : ${mins} : ${secs} ${AMPM}`
-//     }
-//     setInterval(() => {
-//         startclock();
-//     },1000)
-// })
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
 
-function clock(){
-    var hours = document.getElementById('hour')
-    var minutes = document.getElementById('minutes')
-    var seconds = document.getElementById('seconds')
-    var AMPM = document.getElementById('ampm')
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
 
-    let hrs = new Date().getHours()
-    let mins = new Date().getMinutes()
-    let secs = new Date().getSeconds()
-    
-    hours.innerHTML = hrs
-    minutes.innerHTML = mins
-    seconds.innerHTML = secs
-   
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+
+    let currentTime = `${hour} &nbsp &nbsp &nbsp  &nbsp:  &nbsp &nbsp &nbsp &nbsp ${min}&nbsp &nbsp &nbsp &nbsp :&nbsp &nbsp &nbsp &nbsp ${sec}&nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp${am_pm}`
+    document.getElementById("clock")
+        .innerHTML = currentTime;
 }
-var interval = setInterval(clock,1000);
+showTime();
 
 
 
 let morningtime = document.getElementById("wakeuptime")
 let eveningtime = document.getElementById("naptime")
-let para = document.querySelector('p')
+let para = document.querySelector('#message')
 let images = document.querySelector('img')
-function checkTime(){
+function checkTime() {
     let time = new Date();
     let hrs = time.getHours();
     console.log(hrs)
     console.log(morningtime.value);
 
-    if(parseInt(eveningtime.value)=== hrs){
-        para.innerHTML = "Good Evening"
+    if (parseInt(morningtime.value) === hrs) {
+        para.innerHTML = "Good Morning! Wake up!!"
+    }
+    else if (parseInt(eveningtime.value) === hrs) {
+        para.innerHTML = "Good evening!"
         images.src = "./nap_time.svg"
     }
-    else if(parseInt(morningtime.value)===hrs)
-    {
-        para.innerHTML = "Good Morning"
-    }
     else
-    para.innerHTML = "Invalid Input"
+        para.innerHTML = "Invalid Input"
 }
+checkTime()
+
+
+let alarm = document.getElementById("wakeuptime")
+
 
 
