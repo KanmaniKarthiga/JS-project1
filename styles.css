@@ -155,27 +155,29 @@ h3{
     font-size: 20px;
     
 }
-#timer1{
+#hours{
     position: absolute;
     right: 490px;
     top: 38px;
-    z-index: -5;
+    
 }
-#timer2{
+#mins{
     position: absolute;
     right: 390px;
     top: 38px;
-    z-index: -5;
-}#timer3{
+   
+}
+#secs{
     position: absolute;
     right: 295px;
     top: 38px;
-    z-index: -5;
-}#timer4{
+    
+}
+#ampm{
     position: absolute;
     right: 200px;
     top: 38px;
-    z-index: -5;
+   
 }
 .hiddenbox1{
     height: 50px;

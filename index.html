@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Carter+One&family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Carter+One&family=Manrope:wght@500&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <div class="parent">
         <div class="container1">
@@ -22,7 +24,7 @@
                 <div class="card">
                     <img src="./wake_up.svg" alt="wake_up icon" class="image">
                     <label for="wakeuptime">Set wake up time</label>
-                    <select name="wake_up_time" id="wakeuptime">
+                    <select id="wakeuptime" class="opt morning">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
                         <option value="2">2 AM - 3 AM</option>
@@ -53,7 +55,7 @@
                 <div class="card">
                     <img src="./lunch_time.svg" alt="lunchkit icon" class="image" height="25px">
                     <label for="lunchtime">Set lunch time</label>
-                    <select name="lunch_time" id="lunchtime">
+                    <select id="lunchtime" class="opt noon">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
                         <option value="2">2 AM - 3 AM</option>
@@ -84,7 +86,7 @@
                 <div class="card">
                     <img src="./nap_time.svg" alt="snooze icon" class="image">
                     <label for="naptime">Set nap time</label>
-                    <select name="nap_time" id="naptime">
+                    <select id="naptime" class="opt evening">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
                         <option value="2">2 AM - 3 AM</option>
@@ -115,7 +117,7 @@
                 <div class="card">
                     <img src="./night time.png" alt="night icon" class="image">
                     <label for="nighttime">Set night time</label>
-                    <select name="night_time" id="nighttime">
+                    <select id="nighttime" class="opt night">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
                         <option value="2">2 AM - 3 AM</option>
@@ -144,7 +146,7 @@
                 </div>
             </div>
             <div class="morning_message">
-                <p id="message">GOOD MORNING!! WAKE UP!!</p>
+                <p id="leftmessage">GOOD MORNING!! WAKE UP!!</p>
             </div>
             <div class="alarm">
                 <button onclick="checkTime()">Set Alarm</button>
@@ -158,25 +160,19 @@
         </div>
         <div class="container2">
             <div class="card1">
-            <h3>TIME</h3>
-            <div id="clock"> 
-                <div>06</div>
-                <div>:</div>
-                <div>55</div>
-                <div>:</div>
-                <div>03</div>
-            </div>
-            <img src="./timeline.svg" alt="timer" id="timer1">
-            <img src="./timeline.svg" alt="timer" id="timer2">
-            <img src="./timeline.svg" alt="timer" id="timer3">
-            <img src="./AM_svg.svg" alt="timer" id="timer4">
+                <h3>TIME</h3>
+                <div id="clock">
+                    <img src="./timeline.svg" alt="timer" id="hours">
+                    <img src="./timeline.svg" alt="timer" id="mins">
+                    <img src="./timeline.svg" alt="timer" id="secs">
+                    <img src="./AM_svg.svg" alt="timer" id="ampm">
+                </div>
 
-        </div>
-            
+            </div>
             <div class="hiddenbox1"></div>
             <div class="hiddenbox2"></div>
             <div class="card2">
-                <p id="note">GRAB SOME HEALTHY BREAKFAST!!!</p>
+                <p id="clockmessage">GRAB SOME HEALTHY BREAKFAST!!!</p>
             </div>
             <div class="card3">
                 <img src="./Component 30 – 1.svg" alt="image">
