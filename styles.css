@@ -152,32 +152,68 @@ h3{
     display: inline-block;
     margin-left: 95px;
     margin-top: 32px;
-    font-size: 20px;
-    
+    font-size: 20px; 
+    color: #8A11BF;
+    font-family: 'Barlow', sans-serif;
 }
 #hours{
     position: absolute;
-    right: 490px;
-    top: 38px;
-    
+    right: 495px;
+    top: 55px;
+    text-align: center;
 }
 #mins{
     position: absolute;
     right: 390px;
-    top: 38px;
+    top: 55px;
+    text-align: center;
    
 }
 #secs{
     position: absolute;
     right: 295px;
-    top: 38px;
+    top: 55px;
+    text-align: center;
     
 }
 #ampm{
     position: absolute;
-    right: 200px;
-    top: 38px;
-   
+    right: 205px;
+    top: 68px;
+    text-align: center;
+    color: white;
+}
+.colon1{
+   position: relative;
+   right: -70px;
+}
+.colon2{
+    position: relative;
+    right: -170px;
+    top: -22px;
+}
+.img1{
+    position: relative;
+    right: 48px;
+    z-index: -10;
+}
+.img2{
+    position: relative;
+    right: 42px;
+    z-index: -10;
+
+}
+.img3{
+    position: relative;
+    right: 42px;
+    z-index: -10;
+
+}
+.img4{
+    position: relative;
+    right: 48px;
+    z-index: -10;
+
 }
 .hiddenbox1{
     height: 50px;
@@ -213,7 +249,7 @@ h3{
     text-align: center;
     word-spacing: 5px;
     color: #8E53F0;
-    padding-top: 18px;
+    padding-top: 15px;
 }
 .card3{
     position: absolute;

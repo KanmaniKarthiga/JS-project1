@@ -21,16 +21,20 @@ function showTime() {
         hrs -= 12;
         period = "PM";
     }
+    hrs = hrs < 10 ? "0" + hrs : hrs;
+    mins = mins < 10 ? "0" + mins : mins;
+    secs = secs < 10 ? "0" + secs : secs;
+    
     console.log(`${hrs} : ${mins} : ${secs}`)
 
-hours.innerHTML = hrs
-minutes.innerText = mins
-seconds.innerText = secs
+hours.innerText = hrs + "\n hours"
+minutes.innerText = mins + "\n mins"
+seconds.innerText = secs + "\n secs"
 AMPM.innerText = period
 
 let mor_message = "Grab some healthy breakfast!!!"
 let noon_message = "Let's have some lunch!"
-let eve_message = "Stop Yawning,Get some tea. It's jus evening!"
+let eve_message = "Stop Yawning,Get some tea. It's evening!"
 let nyt_message = "Close your eyes and Go to sleep"
 
 if (period === "AM" && hrs>=1 && hrs<=12){
@@ -49,15 +53,16 @@ else{
 }
 showTime();
 
-
-
 var morningtime = document.getElementById("wakeuptime")
 var lunchtime = document.getElementById("lunchtime")
 var eveningtime = document.getElementById("naptime")
 var nighttime = document.getElementById("nighttime")
 
-
 var lefttext = document.getElementById("leftmessage")
+var timeset = document.getElementsByClassName('settime')
+
+var image = document.getElementById('image')
+console.log(timeset)
 function setalarm() {
 
     let mor_text = "Good Morning!! Wake Up!"
@@ -70,27 +75,40 @@ function setalarm() {
     
         if (parseInt(morningtime.value) === hrs) {
             lefttext.innerHTML = mor_text
-            img.src="./Component 30 - 1.svg"
+            image.src="./Component 30 - 1.svg"
+            timeset[0].innerHTML = "Wake Up Time : " + morningtime.value
         }
         if (parseInt(lunchtime.value) === hrs) {
             lefttext.innerHTML = noon_text
-            img.src = "./lunch_time.svg"
+            image.src = "./Component 31 - 1.svg"
+            timeset[1].innerHTML = "Lunch Time : " + lunchtime.value
         }
         if (parseInt(eveningtime.value) === hrs) {
             lefttext.innerHTML = eve_text
-            img.src = "./nap_time.svg"
+            image.src = "./lunch_image.png"
+            timeset[2].innerHTML = "Nap Time : " + eveningtime.value
         }
         if (parseInt(nighttime.value) === hrs) {
             lefttext.innerHTML = nyt_text
-            img.src = "./night time.png"
+            image.src = "./nightimage.jpg"
+            timeset[3].innerHTML = "Night Time : " + nighttime.value
         }
 
-        
+
+timeset[0].innerHTML = "Wake Up Time : " + morningtime.value
+timeset[1].innerHTML = "Lunch Time : " + lunchtime.value
+timeset[2].innerHTML = "Nap Time : " + eveningtime.value
+timeset[3].innerHTML = "Night Time : " + nighttime.value
 }
-setalarm()
 
 
-let alarm = document.getElementById("wakeuptime")
+
+
+
+
+
+
+
 
 
 

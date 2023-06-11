@@ -138,7 +138,7 @@
                         <option value="17">5 PM - 6 PM</option>
                         <option value="18">6 PM - 7 PM</option>
                         <option value="19">7 PM - 8 PM</option>
-                        <option value="20" selected>8 PM - 9 PM</option>
+                        <option value="20">8 PM - 9 PM</option>
                         <option value="21">9 PM - 10 PM</option>
                         <option value="22">10 PM - 11 PM</option>
                         <option value="23">11 PM - 12 AM</option>
@@ -149,25 +149,30 @@
                 <p id="leftmessage">GOOD MORNING!! WAKE UP!!</p>
             </div>
             <div class="alarm">
-                <button onclick="checkTime()">Set Alarm</button>
+                <button onclick="setalarm()" id="button">Set Alarm</button>
                 <div class="timeset">
-                    Wake Up Time : 10AM - 11AM <br>
-                    Lunch Time : 12PM - 1PM <br>
-                    Nap Time : 4PM - 5PM <br>
-                    Night Time : 8PM-9AM <br>
+                    <div class="settime">Wake Up Time : 10AM - 11AM </div>
+                    <div class="settime">Lunch Time : 12PM - 1PM</div>
+                    <div class="settime">Nap Time : 4PM - 5PM </div>
+                    <div class="settime">Night Time : 8PM-9AM</div>
                 </div>
             </div>
         </div>
         <div class="container2">
             <div class="card1">
-                <h3>TIME</h3>
+                <h3>TIME </h3>
                 <div id="clock">
-                    <img src="./timeline.svg" alt="timer" id="hours">
-                    <img src="./timeline.svg" alt="timer" id="mins">
-                    <img src="./timeline.svg" alt="timer" id="secs">
-                    <img src="./AM_svg.svg" alt="timer" id="ampm">
+                    <div id="hours"></div>
+                    <div class="colon1">:</div>
+                    <div id="mins"></div>
+                    <div class="colon2">:</div>
+                    <div id="secs"></div>
+                    <div id="ampm"></div>
                 </div>
-
+            <img src="./timeline.svg" alt="timer" class="img1">
+            <img src="./timeline.svg" alt="timer" class="img2">
+            <img src="./timeline.svg" alt="timer" class="img3">
+            <img src="AM_svg.svg" alt="timer" class="img4">
             </div>
             <div class="hiddenbox1"></div>
             <div class="hiddenbox2"></div>
@@ -175,7 +180,7 @@
                 <p id="clockmessage">GRAB SOME HEALTHY BREAKFAST!!!</p>
             </div>
             <div class="card3">
-                <img src="./Component 30 – 1.svg" alt="image">
+                <img src="./Component 30 – 1.svg" alt="image" id="image">
             </div>
         </div>
     </div>
