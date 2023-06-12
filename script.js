@@ -75,7 +75,7 @@ function setalarm() {
     
         if (parseInt(morningtime.value) === hrs) {
             lefttext.innerHTML = mor_text
-            image.src="./Component 30 - 1.svg"
+            image.src="./morning.jpg"
             timeset[0].innerHTML = "Wake Up Time : " + morningtime.value
         }
         if (parseInt(lunchtime.value) === hrs) {
