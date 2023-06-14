@@ -79,12 +79,12 @@ function setalarm() {
     }
     if (parseInt(lunchtime.value) === hrs) {
         lefttext.innerHTML = noon_text
-        image.src = "./Component 31 - 1.svg"
+        image.src = "./lunchtime.jpg"
         timeset[1].innerHTML = "Lunch Time : " + lunchtime.value
     }
     if (parseInt(eveningtime.value) === hrs) {
         lefttext.innerHTML = eve_text
-        image.src = "./lunch_image.png"
+        image.src = "./lunch_image.jpg"
         timeset[2].innerHTML = "Nap Time : " + eveningtime.value
     }
     if (parseInt(nighttime.value) === hrs) {
