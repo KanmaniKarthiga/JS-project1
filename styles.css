@@ -267,27 +267,154 @@ h3{
         flex-direction: column;
         margin-left: 5px;
     }
-    .container1{
-        margin-left: 0px;
-        width: 100vw;
+    .clock_logo{
+        height: 15px;
+    }
+    .timecard{
+        width: 500px;
+        line-height: 55px;
+        height: 250px;
+        font-size: 12px;
+        position: absolute;
+        top: 385px;
+    }
+    #wakeuptime{
+        width: 150px;
+        position: relative;
+        left: 70px;
+        font-size: 12px;
+    }
+    #lunchtime{
+        width: 150px;
+        position: relative;
+        left: 70px;
+        font-size: 12px;
+
+    }
+    #naptime{
+        width: 150px;
+        position: relative;
+        left: 70px;
+        font-size: 12px;
+
+    }
+    #nighttime{
+        width: 150px;
+        position: relative;
+        left: 70px;
+        font-size: 12px;
+    }
+    .card1{
+       width: 500px;
+       font-size: 12px;
+       position: absolute;
+       top: -270px;
+    }
+    .morning_message{
+        font-size: 20px;
+        width: 490px;
+        height: 53px;
+        position: absolute;
+        top: 649px;
+    }
+    #button{
+        width: 230px;
+        position: absolute;
+        top: 600px;
     }
     .timeset{
-        position: relative;
-        left: 20px;
-        top: -52px;
+        width: 250px;
+        position: absolute;
+        top: 600px;
+        left: 240px;
+    }
+    .container1{
+        margin-left: 0px;
     }
     .container2{
         position: relative;
-        top: 200px;
+        top: 20px;
     }
     .hiddenbox1{
         position: absolute;
         left: 40px;
-        top: 75px;
+        top: -195px;
+       
     }
     .hiddenbox2{
         position: absolute;
         left: 50px;
-        top: 90px;
+        top: -181px;
+        
     }
+    .card2{
+        width: 500px;
+        height: 60px;
+        font-size: 18px;
+        position: absolute;
+        top: -115px;
+    }
+    .img1{
+        position: relative;
+        right: 93px;
+        z-index: -10;
+    }
+    .img2{
+        position: relative;
+        right: 99px;
+        z-index: -10;
+    
+    }
+    .img3{
+        position: relative;
+        right: 105px;
+        z-index: -10;
+    
+    }
+    .img4{
+        position: relative;
+        right: 111px;
+        z-index: -10;
+    
+    }
+    .colon1{
+        position: relative;
+        right: -30px;
+    }
+    .colon2{
+        position: relative;
+        right: -137px;
+        top: -22px;
+    }
+    h3{
+        position: relative;
+        left: 20px;
+    }
+    #hours{
+        position: absolute;
+        left: 105px;
+        top: 28px;
+    }
+    #mins{
+        position: absolute;
+        left: 215px;
+        top: 28px;
+    }
+    #secs{
+        position: absolute;
+        left: 325px;
+        top: 28px;
+    }
+    #ampm{
+        position: absolute;
+        left: 440px;
+        top: 40px;
+    }
+    #image{
+        height: 250px;
+        width: 500px;
+        position: absolute;
+        top: 155px;
+    }
+
 }
