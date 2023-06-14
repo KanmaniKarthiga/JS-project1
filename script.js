@@ -2,7 +2,6 @@ var hours = document.getElementById("hours")
 var minutes = document.getElementById("mins")
 var seconds = document.getElementById("secs")
 var AMPM = document.getElementById("ampm")
-// var time = document.querySelectorAll("select")
 var daytext = document.getElementById("clockmessage")
 
 
