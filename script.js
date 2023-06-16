@@ -138,9 +138,14 @@ function setalarm() {
     timeset[3].innerHTML = "Night Time : " + text4
 }
 
-
-
-
+let hoverChange = document.querySelector('#button')
+hoverChange.addEventListener("mouseover",()=>{
+    hoverChange.innerHTML = " Party Time"
+})
+hoverChange.addEventListener("mouseout",()=>{
+    hoverChange.innerHTML = " Set Alarm"
+   
+})
 
 
 
