@@ -149,69 +149,69 @@ h3{
     left: 50px;
 }
 #clock{
-    display: inline-block;
     margin-left: 95px;
     margin-top: 32px;
     font-size: 20px; 
     color: #8A11BF;
     font-family: 'Barlow', sans-serif;
+    display: flex;
+    gap: 20px;
 }
 #hours{
-    position: absolute;
-    right: 495px;
-    top: 55px;
+    margin-top: -5px;
+    position: relative;
+    left: -1px;
     text-align: center;
 }
 #mins{
-    position: absolute;
-    right: 390px;
-    top: 55px;
+    margin-top: -5px;
+    position: relative;
+    left: 1px;
     text-align: center;
-   
 }
 #secs{
-    position: absolute;
-    right: 295px;
-    top: 55px;
+    margin-top: -5px;
+    position: relative;
+    left: 5px;
     text-align: center;
-    
 }
 #ampm{
-    position: absolute;
-    right: 205px;
-    top: 68px;
+    margin-top: 6px;
+    position: relative;
+    left: 50px;
     text-align: center;
     color: white;
 }
 .colon1{
    position: relative;
-   right: -70px;
+   left: -4px;
+   top: 1px;
 }
 .colon2{
     position: relative;
-    right: -170px;
-    top: -22px;
+    left: 2px;
+    top: 1px;
 }
 .img1{
     position: relative;
-    right: 48px;
+    right: 310px;
     z-index: -10;
 }
 .img2{
     position: relative;
-    right: 42px;
+    right: 315px;
     z-index: -10;
 
 }
 .img3{
     position: relative;
-    right: 42px;
+    right: 320px;
     z-index: -10;
 
 }
 .img4{
     position: relative;
-    right: 48px;
+    right: 325px;
     z-index: -10;
 
 }
@@ -271,12 +271,13 @@ h3{
         height: 15px;
     }
     .timecard{
-        width: 500px;
+        width: 400px;
         line-height: 55px;
         height: 250px;
         font-size: 12px;
         position: absolute;
         top: 385px;
+        margin-left: 40px;
     }
     #wakeuptime{
         width: 150px;
@@ -287,21 +288,21 @@ h3{
     #lunchtime{
         width: 150px;
         position: relative;
-        left: 70px;
+        left: 82px;
         font-size: 12px;
 
     }
     #naptime{
         width: 150px;
         position: relative;
-        left: 70px;
+        left: 90px;
         font-size: 12px;
 
     }
     #nighttime{
         width: 150px;
         position: relative;
-        left: 70px;
+        left: 84px;
         font-size: 12px;
     }
     .card1{
@@ -379,12 +380,13 @@ h3{
     }
     .colon1{
         position: relative;
-        right: -30px;
+        left: 58px;
+        top: 3px;
     }
     .colon2{
         position: relative;
-        right: -137px;
-        top: -22px;
+        left: 138px;
+        top: 3px;
     }
     h3{
         position: relative;
@@ -392,23 +394,23 @@ h3{
     }
     #hours{
         position: absolute;
-        left: 105px;
+        left: 130px;
         top: 28px;
     }
     #mins{
         position: absolute;
-        left: 215px;
+        left: 240px;
         top: 28px;
     }
     #secs{
         position: absolute;
-        left: 325px;
+        left: 349px;
         top: 28px;
     }
     #ampm{
         position: absolute;
-        left: 440px;
-        top: 40px;
+        left: 465px;
+        top: 35px;
     }
     #image{
         height: 250px;
