@@ -261,7 +261,7 @@ h3{
 
 
 /* ########################## */
-@media (max-width: 500px) and (min-width: 250px){
+@media (max-width: 500px) and (min-width: 390px){
     .parent{
         display: flex;
         flex-direction: column;
@@ -271,13 +271,13 @@ h3{
         height: 15px;
     }
     .timecard{
-        width: 400px;
-        line-height: 55px;
-        height: 250px;
+        width: 350px;
+        line-height: 30px;
+        height: 200px;
         font-size: 12px;
         position: absolute;
         top: 385px;
-        margin-left: 40px;
+        margin-left: 14px;
     }
     #wakeuptime{
         width: 150px;
@@ -306,50 +306,52 @@ h3{
         font-size: 12px;
     }
     .card1{
-       width: 500px;
+       width: 380px;
        font-size: 12px;
        position: absolute;
        top: -270px;
     }
     .morning_message{
         font-size: 20px;
-        width: 490px;
+        width: 380px;
         height: 53px;
         position: absolute;
-        top: 649px;
+        top: 600px;
     }
     #button{
-        width: 230px;
+        width: 150px;
         position: absolute;
-        top: 600px;
+        top: 545px;
     }
     .timeset{
-        width: 250px;
+        width: 210px;
         position: absolute;
-        top: 600px;
-        left: 240px;
+        top: 546px;
+        left: 164px;
     }
     .container1{
         margin-left: 0px;
     }
     .container2{
         position: relative;
-        top: 20px;
+        top: -5px;
     }
     .hiddenbox1{
         position: absolute;
-        left: 40px;
+        left: 20px;
         top: -195px;
+        width: 330px;
        
     }
     .hiddenbox2{
         position: absolute;
-        left: 50px;
+        left: 40px;
         top: -181px;
+        width: 290px;
         
     }
     .card2{
-        width: 500px;
+        width: 380px;
         height: 60px;
         font-size: 18px;
         position: absolute;
@@ -357,35 +359,47 @@ h3{
     }
     .img1{
         position: relative;
-        right: 93px;
+        right: 140px;
+        top: -23px;
         z-index: -10;
+        width: 70px;
+        height: 150px;
     }
     .img2{
         position: relative;
-        right: 99px;
+        right: 150px;
+        top: -23px;
         z-index: -10;
+        width: 70px;
+        height: 150px;
     
     }
     .img3{
         position: relative;
-        right: 105px;
+        right: 160px;
         z-index: -10;
+        width: 70px;
+        height: 150px;
+        top: -23px;
     
     }
     .img4{
         position: relative;
-        right: 111px;
+        right: 170px;
         z-index: -10;
+        width: 70px;
+        height: 150px;
+        top: -23px;
     
     }
     .colon1{
         position: relative;
-        left: 58px;
+        left: -15px;
         top: 3px;
     }
     .colon2{
         position: relative;
-        left: 138px;
+        left: 39px;
         top: 3px;
     }
     h3{
@@ -394,22 +408,22 @@ h3{
     }
     #hours{
         position: absolute;
-        left: 130px;
+        left: 73px;
         top: 28px;
     }
     #mins{
         position: absolute;
-        left: 240px;
+        left: 156px;
         top: 28px;
     }
     #secs{
         position: absolute;
-        left: 349px;
+        left: 236px;
         top: 28px;
     }
     #ampm{
         position: absolute;
-        left: 465px;
+        left: 324px;
         top: 35px;
     }
     #image{
@@ -417,6 +431,11 @@ h3{
         width: 500px;
         position: absolute;
         top: 155px;
+    }
+    .card3{
+        margin-left: -55px;
+        margin-top: -15px;
+
     }
 
 }
