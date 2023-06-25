@@ -332,23 +332,24 @@ h3{
        
     }
     .container1{
-        margin-left: 0px;
+        margin-left: 5px;
     }
     .container2{
         position: relative;
         top: -5px;
+        left: 15px;
     }
     .hiddenbox1{
         position: relative;
         left: 23px;
-        top: -375px;
+        top: -355px;
         width: 330px;
        
     }
     .hiddenbox2{
         position: relative;
         left: 42px;
-        top: -410px;
+        top: -388px;
         width: 290px;
         
     }
@@ -357,7 +358,7 @@ h3{
         height: 60px;
         font-size: 18px;
         position: relative;
-        top: -395px;
+        top: -377px;
     }
     .img1{
         position: relative;
@@ -441,7 +442,7 @@ h3{
     }
     .card1{
         position: relative;
-        top: -340px;
+        top: -320px;
     }
 
 }
