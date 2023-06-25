@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Carter+One&family=Manrope:wght@500&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -23,7 +25,7 @@
             <div class="timecard">
                 <div class="card">
                     <img src="./wake_up.svg" alt="wake_up icon" class="image">
-                    <label for="wakeuptime">Set wake up time</label>
+                    <label for="wakeuptime" class="timeSelectLabel">Set wake up time</label>
                     <select id="wakeuptime" class="opt morning">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
@@ -54,7 +56,7 @@
 
                 <div class="card">
                     <img src="./lunch_time.svg" alt="lunchkit icon" class="image" height="25px">
-                    <label for="lunchtime">Set lunch time</label>
+                    <label for="lunchtime" class="timeSelectLabel">Set lunch time</label>
                     <select id="lunchtime" class="opt noon">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
@@ -85,7 +87,7 @@
 
                 <div class="card">
                     <img src="./nap_time.svg" alt="snooze icon" class="image">
-                    <label for="naptime">Set nap time</label>
+                    <label for="naptime" class="timeSelectLabel">Set nap time</label>
                     <select id="naptime" class="opt evening">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
@@ -116,7 +118,7 @@
 
                 <div class="card">
                     <img src="./night time.png" alt="night icon" class="image">
-                    <label for="nighttime">Set night time</label>
+                    <label for="nighttime" class="timeSelectLabel">Set night time</label>
                     <select id="nighttime" class="opt night">
                         <option value="0">12 AM - 1 AM</option>
                         <option value="1">1 AM - 2 AM</option>
@@ -146,7 +148,7 @@
                 </div>
             </div>
             <div class="morning_message">
-                <p id="leftmessage">GOOD MORNING!! WAKE UP!!</p>
+                <p id="leftmessage">GOOD MORNING! WAKE UP!</p>
             </div>
             <div class="alarm">
                 <button onclick="setalarm()" id="button">Set Alarm</button>
@@ -177,10 +179,10 @@
             <div class="hiddenbox1"></div>
             <div class="hiddenbox2"></div>
             <div class="card2">
-                <p id="clockmessage">GRAB SOME HEALTHY BREAKFAST!!!</p>
+                <p id="clockmessage">GRAB SOME HEALTHY BREAKFAST!</p>
             </div>
             <div class="card3">
-                <img src="./Component 30 – 1.svg" alt="image" id="image">
+                <img src="./sunrise.svg" alt="sunrise_svg" id="image">
             </div>
         </div>
     </div>
