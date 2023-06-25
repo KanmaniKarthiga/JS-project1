@@ -275,8 +275,8 @@ h3{
         line-height: 30px;
         height: 200px;
         font-size: 12px;
-        position: absolute;
-        top: 385px;
+        position: relative;
+        top: 290px;
         margin-left: 14px;
     }
     #wakeuptime{
@@ -315,19 +315,19 @@ h3{
         font-size: 20px;
         width: 380px;
         height: 53px;
-        position: absolute;
-        top: 600px;
+        position: relative;
+        top: 280px;
     }
     #button{
         width: 150px;
-        position: absolute;
-        top: 545px;
+        position: relative;
+        top: 225px;
     }
     .timeset{
         width: 210px;
-        position: absolute;
-        top: 546px;
-        left: 164px;
+        position: relative;
+        top: 230px;
+        left: -12px;
     }
     .container1{
         margin-left: 0px;
@@ -337,16 +337,16 @@ h3{
         top: -5px;
     }
     .hiddenbox1{
-        position: absolute;
-        left: 20px;
-        top: -195px;
+        position: relative;
+        left: 23px;
+        top: -375px;
         width: 330px;
        
     }
     .hiddenbox2{
-        position: absolute;
-        left: 40px;
-        top: -181px;
+        position: relative;
+        left: 42px;
+        top: -410px;
         width: 290px;
         
     }
@@ -354,8 +354,8 @@ h3{
         width: 380px;
         height: 60px;
         font-size: 18px;
-        position: absolute;
-        top: -115px;
+        position: relative;
+        top: -395px;
     }
     .img1{
         position: relative;
@@ -434,8 +434,12 @@ h3{
     }
     .card3{
         margin-left: -55px;
-        margin-top: -15px;
+        margin-top: -154px;
 
+    }
+    .card1{
+        position: relative;
+        top: -340px;
     }
 
 }
