@@ -24,29 +24,27 @@ function showTime() {
     mins = mins < 10 ? "0" + mins : mins;
     secs = secs < 10 ? "0" + secs : secs;
 
-    console.log(`${hrs} : ${mins} : ${secs}`)
-
     hours.innerText = hrs + "\n hours"
     minutes.innerText = mins + "\n mins"
     seconds.innerText = secs + "\n secs"
     AMPM.innerText = period
 
-    let mor_message = "Grab some healthy breakfast!!!"
+    let mor_message = "Grab some healthy breakfast!"
     let noon_message = "Let's have some lunch!"
-    let eve_message = "Stop Yawning,Get some tea. It's evening!"
-    let nyt_message = "Close your eyes and Go to sleep"
+    let eve_message = "Stop yawning, get some tea. It's evening!"
+    let nyt_message = "Close your eyes and go to sleep."
 
     if (period === "AM" && hrs >= 1 && hrs <= 12) {
-        document.getElementById("clockmessage").innerHTML = mor_message
+        document.getElementById("clockmessage").innerText = mor_message
     }
     else if (period === "PM" && (hrs === 12 || (hrs >= 1 && hrs <= 3))) {
-        document.getElementById("clockmessage").innerHTML = noon_message
+        document.getElementById("clockmessage").innerText = noon_message
     }
     else if (period === "PM" && hrs >= 4 && hrs <= 7) {
-        document.getElementById("clockmessage").innerHTML = eve_message
+        document.getElementById("clockmessage").innerText = eve_message
     }
     else {
-        document.getElementById("clockmessage").innerHTML = nyt_message
+        document.getElementById("clockmessage").innerText = nyt_message
     }
 
 }
@@ -61,7 +59,6 @@ var lefttext = document.getElementById("leftmessage")
 var timeset = document.getElementsByClassName('settime')
 
 var image = document.getElementById('image')
-console.log(timeset)
 
 function setalarm() {
         let mor_text = "Good Morning!! Wake Up!"
@@ -73,24 +70,24 @@ function setalarm() {
         let hrs = newtime.getHours();
 
         if (parseInt(morningtime.value) === hrs) {
-            lefttext.innerHTML = mor_text
+            lefttext.innerText = mor_text
             image.src = "./morning.jpg"
-            timeset[0].innerHTML = "Wake Up Time : " + morningtime.value
+            timeset[0].innerText = "Wake Up Time : " + morningtime.value
         }
         if (parseInt(lunchtime.value) === hrs) {
-            lefttext.innerHTML = noon_text
+            lefttext.innerText = noon_text
             image.src = "./lunchtime.jpg"
-            timeset[1].innerHTML = "Lunch Time : " + lunchtime.value
+            timeset[1].innerText = "Lunch Time : " + lunchtime.value
         }
         if (parseInt(eveningtime.value) === hrs) {
-            lefttext.innerHTML = eve_text
+            lefttext.innerText = eve_text
             image.src = "./lunch_image.jpg"
-            timeset[2].innerHTML = "Nap Time : " + eveningtime.value
+            timeset[2].innerText = "Nap Time : " + eveningtime.value
         }
         if (parseInt(nighttime.value) === hrs) {
-            lefttext.innerHTML = nyt_text
+            lefttext.innerText = nyt_text
             image.src = "./nightimage.jpg"
-            timeset[3].innerHTML = "Night Time : " + nighttime.value
+            timeset[3].innerText = "Night Time : " + nighttime.value
         }
 
         const getSelectedText = (value) => {
@@ -101,8 +98,7 @@ function setalarm() {
         }
         const select = document.querySelector('select')
         const text = getSelectedText(select);
-        console.log(text)
-        timeset[0].innerHTML = "Wake Up Time : " + text
+        timeset[0].innerText = "Wake Up Time : " + text
 
         const getSelectedText2 = (val) => {
             if(val.selectedIndex === -1){
@@ -112,8 +108,7 @@ function setalarm() {
         }
         const select2 = document.querySelector('#lunchtime')
         const text2 = getSelectedText2(select2)
-        console.log(text2)
-        timeset[1].innerHTML = "Lunch Time : " + text2
+        timeset[1].innerText = "Lunch Time : " + text2
 
         const getSelectedText3 = (val1) => {
             if(val1.selectedIndex === -1){
@@ -123,8 +118,7 @@ function setalarm() {
         }
         const select3 = document.querySelector('#naptime')
         const text3 = getSelectedText3(select3)
-        console.log(text3)
-        timeset[2].innerHTML = "Nap Time : " + text3
+        timeset[2].innerText = "Nap Time : " + text3
 
         const getSelectedText4 = (val2) => {
             if(val2.selectedIndex === -1){
@@ -134,28 +128,15 @@ function setalarm() {
         }
         const select4 = document.querySelector('#nighttime')
         const text4 = getSelectedText3(select4)
-        console.log(text4)
-        timeset[3].innerHTML = "Night Time : " + text4
+        timeset[3].innerText = "Night Time : " + text4
 
 }
 
 let hoverChange = document.querySelector('#button')
 hoverChange.addEventListener("mouseover",()=>{
-    hoverChange.innerHTML = " Party Time"
+    hoverChange.innerText = " Party Time"
 })
 hoverChange.addEventListener("mouseout",()=>{
-    hoverChange.innerHTML = " Set Alarm"
+    hoverChange.innerText = " Set Alarm"
    
 })
-
-
-
-
-
-
-
-
-
-
-
-

@@ -88,9 +88,10 @@ label{
     color: white;
     position: relative;
     top: 50px;
-    font-family: 'Carter One', cursive;
+    font-family: 'Oswald', cursive;
     font-weight: 900;
     font-size: 25px;
+    text-align: center;
 }
 .alarm{
     position: relative;
@@ -243,8 +244,8 @@ h3{
     border-radius: 10px;
     position: absolute;
     top: 175px;
-    font-family: 'Carter One', cursive;
-    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     word-spacing: 5px;
@@ -255,6 +256,10 @@ h3{
     position: absolute;
     top: 270px;
     height: 340px;
+}
+
+.timeSelectLabel {
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -317,6 +322,7 @@ h3{
         height: 53px;
         position: relative;
         top: 280px;
+        text-align: center;
     }
     #button{
         width: 150px;
