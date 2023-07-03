@@ -28,7 +28,7 @@ body{
     color: #3D087B;
     line-height: 70px;
     height: 500px;
-    width: 500px;
+    width: 37vw;
     border-radius: 10px;
     position: relative;
     top: 50px;
@@ -48,28 +48,28 @@ label{
 #wakeuptime{
     position: relative;
     left: 72px;
-    width: 230px;
+    width: 50%;
     height: 30px;
     padding-left: 10px;
 }
 #lunchtime{
     position: relative;
     left: 93px;
-    width: 230px;
+    width: 50%;
     height: 30px;
     padding-left: 10px;
 }
 #naptime{
     position: relative;
     left:109px;
-    width: 230px;
+    width: 50%;
     height: 30px;
     padding-left: 10px;
 }
 #nighttime{
     position: relative;
     left: 96px;
-    width: 230px;
+    width: 50%;
     height: 30px;
     padding-left: 10px;
 }
@@ -98,7 +98,7 @@ label{
 }
 button{
     height: 40px;
-    width: 240px;
+    width: 45%;
     border-radius: 5px;
     background: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF);
     border: none;
@@ -111,7 +111,7 @@ button:hover{
 }
 .timeset{
     height: 120px;
-    width: 250px;
+    width: 50%;
     padding-left: 15px;
     padding-top: 7px;
     line-height: 25px;
@@ -261,17 +261,18 @@ h3{
 
 
 /* ########################## */
-@media (max-width: 500px) and (min-width: 250px){
+@media (max-width: 500px) and (min-width: 390px){
     .parent{
         display: flex;
         flex-direction: column;
         margin-left: 5px;
+        
     }
     .clock_logo{
         height: 15px;
     }
     .timecard{
-        width: 350px;
+        width: 100vw;
         line-height: 30px;
         height: 200px;
         font-size: 12px;
@@ -280,56 +281,56 @@ h3{
         margin-left: 14px;
     }
     #wakeuptime{
-        width: 150px;
+        width: 50%;
         position: relative;
         left: 70px;
         font-size: 12px;
     }
     #lunchtime{
-        width: 150px;
+        width: 50%;
         position: relative;
         left: 82px;
         font-size: 12px;
 
     }
     #naptime{
-        width: 150px;
+        width: 50%;
         position: relative;
-        left: 90px;
+        left: 91px;
         font-size: 12px;
 
     }
     #nighttime{
-        width: 150px;
+        width: 50%;
         position: relative;
         left: 84px;
         font-size: 12px;
     }
     .card1{
-       width: 380px;
+       width: 100vw;
        font-size: 12px;
        position: absolute;
        top: -270px;
     }
     .morning_message{
         font-size: 20px;
-        width: 380px;
+        width: 100vw;
         height: 53px;
         position: relative;
         top: 280px;
     }
     #button{
-        width: 150px;
+        width: 45%;
         position: relative;
         top: 225px;
     }
     .timeset{
-        width: 210px;
+        width: 50%;
+        height: 18vh;
         position: absolute;
         top: 230px;
-        left: 166px;
-    
-       
+        left: 190px;
+
     }
     .container1{
         margin-left: 5px;

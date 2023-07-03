@@ -5,6 +5,7 @@ var AMPM = document.getElementById("ampm")
 var daytext = document.getElementById("clockmessage")
 
 
+
 setInterval(showTime, 1000);
 function showTime() {
     let time = new Date();
@@ -62,7 +63,7 @@ var timeset = document.getElementsByClassName('settime')
 
 var image = document.getElementById('image')
 console.log(timeset)
-
+const query = window.matchMedia("(min-width: 250px)")
 function setalarm() {
         let mor_text = "Good Morning!! Wake Up!"
         let noon_text = "Good Afternoon! Take some sleep"
@@ -71,7 +72,7 @@ function setalarm() {
 
         let newtime = new Date();
         let hrs = newtime.getHours();
-
+        
         if (parseInt(morningtime.value) === hrs) {
             lefttext.innerHTML = mor_text
             image.src = "./morning.jpg"
@@ -92,7 +93,7 @@ function setalarm() {
             image.src = "./nightimage.jpg"
             timeset[3].innerHTML = "Night Time : " + nighttime.value
         }
-
+    
         const getSelectedText = (value) => {
             if (value.selectedIndex === -1) {
                 return null;
@@ -136,7 +137,6 @@ function setalarm() {
         const text4 = getSelectedText3(select4)
         console.log(text4)
         timeset[3].innerHTML = "Night Time : " + text4
-
 }
 
 let hoverChange = document.querySelector('#button')
@@ -147,6 +147,13 @@ hoverChange.addEventListener("mouseout",()=>{
     hoverChange.innerHTML = " Set Alarm"
    
 })
+
+
+
+
+
+
+
 
 
 
