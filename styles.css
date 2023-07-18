@@ -262,6 +262,9 @@ h3{
 
 /* ########################## */
 @media (min-width: 320px) and (max-width: 390px){
+    .clock_logo{
+        width: 300px;
+    }
     .parent{
         display: flex;
         flex-direction: column;
@@ -269,7 +272,7 @@ h3{
         
     }
     .timecard{
-        width: 100%;
+        width: 100vw;
         line-height: 30px;
         height: 200px;
         font-size: 12px;
@@ -304,7 +307,7 @@ h3{
         font-size: 12px;
     }
     .card1{
-       width: 100vw;
+       width: 98vw;
        font-size: 12px;
        position: absolute;
        top: -440px;
@@ -331,24 +334,25 @@ h3{
 
     }
     .container1{
-        margin-left: 5px;
+        margin-left: 0px;
+        width: 95vw;
     }
     .hiddenbox1{
         position: relative;
         left: 24px;
         top: -375px;
-        width: 287px;
+        width: 300px;
        
     }
     .hiddenbox2{
         position: relative;
         left: 43px;
         top: -415px;
-        width: 249px;
+        width: 255px;
         
     }
     .card2{
-        width: 100vw;
+        width: 95vw;
         height: 60px;
         font-size: 15px;
         position: relative;
@@ -425,7 +429,7 @@ h3{
     }
     #image{
         height: 250px;
-        width: 100vw;
+        width: 95vw;
         position: absolute;
         top: 623px;
         left: 60px;
